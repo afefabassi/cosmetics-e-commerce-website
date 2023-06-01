@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="web.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <script src="./aboutUs.js" defer></script>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up-o.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="./web.js" defer></script>
+</head>
+<body>
+
+<!--------------------------------- header ------------------------------->
+
+    <section class="header" id="home">
+        <nav id="navbar">
+            <a href="web.html"><img src="./img/logo.png" alt="" class="logo"></a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="./all/ourdeals.html">OUR PRODUCTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <div class="icons" >
+                        <input type="text" class="searchfield" placeholder="search" id="search-input">
+                        <i class="gg-search" id="search-icon"></i>
+                        <i class="gg-shopping-cart" ></i>
+                        <a href="#login"><i class="gg-profile"></i></a> 
+                        <script>// when u click or hover on the search icon u will be able to tap in the input
+
+
+                          let searchIcon = document.getElementById("search-icon");
+                          let searchInput = document.getElementById("search-input");
+
+                          searchIcon.addEventListener('click', function() {
+                            searchInput.focus();
+                          });
+
+                          searchIcon.addEventListener('mouseover', function() {
+                            searchInput.style.cursor = 'text';
+                          });
+
+                          searchIcon.addEventListener('mouseout', function() {
+                            searchInput.style.cursor = 'default';
+                          });</script>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="textbox" >
+            <h1>World Biggest Cosmetic Product Company</h1>
+            <p>We are a premium cosmetic product company that offers a range of high-quality makeup and skincare products designed to enhance your natural beauty. <br> Our products are formulated with nourishing ingredients that provide luxurious, long-lasting results</p>
+            <a href="./all/ourdeals.html" class="btn">Shop now</a>
+
+
+        </div>
+    </section>
+    <!-----------------------------------------about us ----------------------------------- -->
+    <div id="aboutus" class="aboutUsContainer">
+        <h3 class="aboutUsTitle">About Us</h3>
+        <div class="firstPartAboutUs">
+    
+           <div class="textC1">
+            <h1 class="touchTheBody">Touch The Body. Heal The Mind. Calm The Spirit.</h1>
+            <p class="firstpgdesc">Our brand for Natural Beauty offers cosmetic products that correspond to every need and are suitable for all age groups. </p>
+            <div class="myDiv1">You can find us in Laouina , Sousse and Sfax </div>
+            <div class="counter">
+                <div class="counter-item">
+                  <p class="p1"><span class="counter-value" data-count="42">0</span>K</p>
+                  <p class="counter-label">Happy Clients</p>
+                </div>
+                <div class="counter-item">
+                  <p class="p1"><span class="counter-value" data-count="4578">0</span>+</p>
+                  <p class="counter-label">Clients Satisfied</p>
+                </div>
+                <div class="counter-item">
+                  <p class="p1"><span class="counter-value" data-count="104">0</span>+</p>
+                  <p class="counter-label">Awards</p>
+                </div>
+              </div>
+            <button class="readMore readMore1">Read More</button>
+            </div>
+           <div class="imgContainer  image1">
+            <img class="img1" src="./img/insouciante-jolie-fille-posant-bulles-savon-photo-studio-jolie-femme-au-gingembre-souriant-fond-rose.jpg" /> 
+          </div>
+        </div>
+        <div class="secondPartAboutUs">
+            <div class="imgContainer image2">
+                <img class="img2" src="./img/concept-beaute-belle-femme-peau-propre-fraiche-studio-rose-visage-soins-peau-cosmetologie.jpg" /> 
+              </div>
+            <div class="textC2">
+             <h1 class="touchTheBody">We Are Committed to Make You More Beautiful</h1>
+             <p class="firstpgdesc secondp"> The choice of precious natural ingredients, mostly from organic farming and the plant kingdom, such as olive oil, prickly pear seed oil, sweet almond oil, argan oil, shea butter, fruit extracts</p>
+            
+             <button class="readMore  readMore2">Read More</button>
+             <button class="readMore shopnow">Shop Now</button>
+             <div class="myDiv2">essential oils such as geranium essential oil, orange blossom essential oil, lavender essential oil, and floral waters such as rose floral water, floral water flowers, is made after rigorous selection.</div>
+             </div>
+            </div>
+        <div class="thirdPart">
+            <div class="beauty1">
+              <h2 class="beauty">Beauty</h2>
+              <p class="beautyphrase">is in the details, let us take care of them.</p>
+              <div class="aud">
+                <audio controls src="./X2Download.app - Beethoven  - Silencio (128 kbps).mp3" ></audio>
+              </div>
+            </div>
+            <div class="main">
+               <video src="./img/masqueWomen.mp4" autoplay loop muted type="mp4"></video>
+               <img src="./img/mask.jpg" alt="mask" class="mask">
+            </div>
+        </div>
+        <!-- our products  then   -->
+        <div id="blog" class="fifthPartClients">
+          <div class="hearFromClients">
+            <div>Don't Believe Us!!</div>
+            <div>Hear From Our Client's</div>
+          </div>
+          <div class="clients">
+              <div class="client">
+                <img src="./img/woman-posing-with-bathrobe-spa.jpg" alt="Client 1">
+                <p>"This face serum has made my skin look so much brighter and smoother. I'm amazed!"</p>
+                <p>Serena Decaprio </p>
+              </div>
+              <div class="client">
+                <img src="./img/fille-aux-yeux-verts-sourire-blanc-comme-neige-peint-ses-levres-du-rouge-levres-portrait-dame-beret-elegant-fond-rose.jpg "alt="Client 2">
+                <p>"I'm in love with this lipstick! It lasts all day and the color is perfect."</p>
+                <p>Annia Gomez</p>
+              </div>
+              <div class="client">
+                <img src="./img/smiley-coup-moyen-femme-tenant-bouteille.jpg" alt="Client 3">
+                <p>"This perfume makes me feel so confident and beautiful. I can't imagine wearing anything else.It's definitely a crowd-pleaser!"</p>
+                <p>Clara Martin</p>
+              </div>
+              
+              <div class="client">
+                <img src="./img/portrait-femme-blonde-apres-douche.jpg" alt="Client 4">
+                <p>"My hair has never looked better since I started using this shampoo and conditioner!"</p>
+                <p>Victoria Raphael</p>
+              </div>
+            </div>
+            <div class="arrows">
+              <div class="arrow-left"></div>
+              <div class="arrow-right"></div>
+            </div>
+            
+        </div>
+        <div class="whatAreYouWaiting">
+          
+          <div class="moreThanWelcome2" id="login">So what are you waiting for? </div>
+          <div class="moreThanWelcome2">Come and  join us!</div>
+        </div>
+        
+
+</div>
+<!------------------------------------------- sign up ------------------------------------------->
+<section class="section3">
+  <div class="formulaire">
+      <form class="signin" action="work.php" method="POST">
+          <fieldset style="background-color: rgba(252, 200, 209,0.7);border-radius: 10px;">
+              <h1 style="color:#D14D72;font-size: 32px;margin: 10px ; padding-left: 30%;">Sign up for free</h1>
+
+
+              <div class="inside">
+                  <div class="firstLastName">
+                      <div class="first">
+                          <label for="name" class="lab">Full Name</label>
+                          <input type="text" placeholder="Full Name" class="box" id="full-name" required
+                              name="fullname">
+                          <br>
+                      </div>
+                      <div class="eemail">
+                          <label for="Email" class="lab">Email &ensp;&ensp;&nbsp;&nbsp;</label>
+                          <input type="text" placeholder="Email" class="box" id="email" required name="email">
+                          <br>
+                      </div>
+                  </div>
+
+                  <div class="emailPhone">
+                      
+                      <div class="last">
+                          <label for="Last Name" class="lab">Password</label>
+                          <input type="password" placeholder="password" class="box" id="password" required
+                              name="password">
+                          <br>
+                      </div>
+
+                      <div class="pphone">
+                          <label for="Phone" class="lab">Phone &ensp;&ensp;&nbsp; </label>
+                          <input type="text" placeholder="Phone" class="box" id="phone" required name="phone">
+                          <br>
+                      </div>
+                  </div>
+
+                  <label for="">Sex &ensp; &ensp;</label>
+                  <label for="">
+                      <input type="radio" name="sexe" id="men" value="man">Men&ensp;
+                  </label>
+                  <label for="">
+                      <input type="radio" name="sexe" id="women" value="woman">Women&ensp;
+                  </label>
+                  <br>
+                  <label for="" class="lab">Products &ensp; </label>
+                  <select name="product" id="" class="product">
+                      <option value="makeup" id="opt">Makeup</option>
+                      <option value="haircare" id="opt">Hair Care</option>
+                      <option value="skincare" id="opt">Skin Care</option>
+                      <option value="bodycare" id="opt">Body Care</option>
+                      <option value="perfumes" id="opt">Perfumes</option>
+                  </select>
+                  <br>
+
+                  <label for="" class="iWant">I want to recieve notifications</label>
+                  <input type="checkbox"  name="notification" value="yes">
+                  <br>
+                  <Label><strong>Any Question? <br></strong> Feel Free To Ask Us </Label>
+                  <br>
+                  <textarea  cols="40" rows="5" class="textarea" name="question" id="textarea"> </textarea>
+                  <br>
+                  <div>
+                      <button class="btnform" id="signup-button" name="submit" value="register">Sign up</button>
+                      <script>
+                          const firstNameInput = document.querySelector('#first-name');
+                          const lastNameInput = document.querySelector('#last-name');
+                          const emailInput = document.querySelector('#email');
+                          const phoneInput = document.querySelector('#phone');
+                          const signupButton = document.querySelector('#signup-button');
+                          // Fonction pour vérifier si tous les champs sont remplis
+                          function areAllFieldsFilled() {
+                              if (firstNameInput.value.trim() === '' || lastNameInput.value.trim() === '' || emailInput.value.trim() === '' || phoneInput.value.trim() === '') {
+                                  return false;
+                              }
+                              return true;
+                          }
+                          // Fonction pour ajouter une bordure rouge aux champs vides
+                          function addRedBorderToEmptyFields() {
+                              if (firstNameInput.value.trim() === '') {
+                                  firstNameInput.style.border = '2px solid red';
+                              }
+                              if (lastNameInput.value.trim() === '') {
+                                  lastNameInput.style.border = '2px solid red';
+                              }
+                              if (emailInput.value.trim() === '') {
+                                  emailInput.style.border = '2px solid red';
+                              }
+                              if (phoneInput.value.trim() === '') {
+                                  phoneInput.style.border = '2px solid red';
+                              }
+                          }
+                          // Fonction pour enlever la bordure rouge des champs de saisie
+                          function removeRedBordersFromFields() {
+                              firstNameInput.style.border = '';
+                              lastNameInput.style.border = '';
+                              emailInput.style.border = '';
+                              phoneInput.style.border = '';
+                          }
+                          // Fonction pour afficher une boîte de dialogue d'alerte
+                          function showAlert(message) {
+                              alert(message);
+                          }
+                          signupButton.addEventListener('click', function () {
+                              // Vérification si tous les champs sont remplis
+                              if (!areAllFieldsFilled()) {
+                                  // Ajout d'une bordure rouge aux champs de saisie vides
+                                  addRedBorderToEmptyFields();
+                                  // Affichage d'une boîte de dialogue d'alerte
+                                  showAlert('Please fill in all fields');
+                              } else {
+                                  // Enlever la bordure rouge des champs de saisie
+                                  removeRedBordersFromFields();
+                                  // Affichage d'une boîte de dialogue d'alerte
+                                  showAlert('Registration completed successfully! please check your registration email for email verification');
+
+                              }
+                          });
+
+
+                      </script>
+                  </div>
+              </div>
+          </fieldset>
+      </form>
+  </div>
+  <!-------------------------------login ------------------------------ -->
+  <form class="login" action="login1.php" method="POST">
+    <fieldset style="background-color: rgba(252, 200, 209,0.7); border-radius: 10px;">
+        <h1 style="color:#D14D72;font-size: 32px;margin: 10px ;padding-left: 120px;">Log in</h1>
+        <div class="inside">
+            <label for="Email" class="lab">Email</label>
+            <input type="text" placeholder="Email" class="box" id="email12" name="email" required>
+            <br>
+            <label for="password" class="lab">Password</label>
+            <input type="password" placeholder="Password" class="box" id="password" name="password" required>
+            <br>
+            <div>
+                <button class="btnform" id="login" name="submit">Login</button>
+                <script>
+                    const login = document.querySelector('#login')
+                    const emailInput2 = document.querySelector('#email2');
+                    const password = document.querySelector('#password');
+                    // Fonction pour vérifier si tous les champs sont remplis
+                    function areAllFieldsFilled2() {
+                        if (emailInput2.value.trim() === '' || password.value.trim() === '') {
+                            return false;
+                        }
+                        return true;
+                    }
+                    // Fonction pour ajouter une bordure rouge aux champs vides
+                    function addRedBorderToEmptyFields2() {
+                        if (emailInput2.value.trim() === '') {
+                            emailInput2.style.border = '2px solid red';
+                        }
+                        if (password.value.trim() === '') {
+                            password.style.border = '2px solid red';
+                        }
+                    }
+                    // Fonction pour enlever la bordure rouge des champs de saisie
+                    function removeRedBordersFromFields2() {
+
+                        emailInput2.style.border = '';
+                        password.style.border = '';
+                    }
+
+                    // Fonction pour afficher une boîte de dialogue d'alerte
+                    function showAlert2(message) {
+                        alert(message);
+                    }
+
+
+                    loginButton.addEventListener('click', function () {
+                        // Vérification si tous les champs sont remplis
+                        if (!areAllFieldsFilled()) {
+                            // Ajout d'une bordure rouge aux champs de saisie vides
+                            addRedBorderToEmptyFields();
+                            // Affichage d'une boîte de dialogue d'alerte
+                            showAlert('Please fill in all fields');
+                        } else {
+                            // Enlever la bordure rouge des champs de saisie
+                            removeRedBordersFromFields();
+                        }
+                    });
+
+                </script>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</section>
+<!--------------------------------------------- Footer ----------------------------------------->
+    <footer id="contact" class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">OUR PRODUCTS</a></li>
+                        <li><a href="#">OUR OFFERS</a></li>
+                        <li><a href="#">SHOP NOW</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">makeup</a></li>
+                        <li><a href="#">hair care</a></li>
+                        <li><a href="#">skin care</a></li>
+                        <li><a href="#">body care </a></li>
+                        <li><a href="#">perfumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="puce">
+                        <li>+216 55 123 123</li>
+                        <li>+216 99 123 123</li>
+                        <li>+216 22 123 123</li>
+                    </ul>
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+          <p>&copy;<script>document.write(new Date().getFullYear())</script>  All Rights Reserved.</p>
+        </div>
+        <i class="gg-arrow-up-o" style="transform: scale(2);color: #D14D72;" id="scroll" ></i>
+        
+   </footer>
+
+   </body>
+   <script>
+   document.getElementById("scroll").addEventListener("click", 
+   function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  </script>
+  <script>
+const navbar = document.querySelector('#navbar');
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add('nav-pink');
+    navbar.classList.remove('nav-transparent');
+  } else {
+    navbar.classList.add('nav-transparent');
+    navbar.classList.remove('nav-pink');
+  }
+});
+
+  </script>
+  
+</html>
